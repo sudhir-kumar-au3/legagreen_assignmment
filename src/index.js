@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Route, BrowserRouter, Redirect } from 'react-router-dom';
 
+const Home = () => {
+  const doRedirect = () => {
+    let log = true;
+    if (log){
+      return <Redirect to='/dashboard'></Redirect>
+    }
+  }
+  return(
+    <BrowserRouter>
+    <Route path='/'><App/></Route>
+    {doRedirect}
+  </BrowserRouter>
+  )
+}
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+   <Home/>
   </React.StrictMode>,
   document.getElementById('root')
 );
