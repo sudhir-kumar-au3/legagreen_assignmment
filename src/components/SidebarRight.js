@@ -4,7 +4,7 @@ import Icon from "./Icon";
 function SidebarRight() {
   return (
     <div
-      className="border-left bg-light p-3 b-shadow pt-3 cont"
+      className="border-left bg-light p-3 b-shadow sidebar-right pt-3 cont"
       style={{ height: "100vh" }}
     >
       <div>

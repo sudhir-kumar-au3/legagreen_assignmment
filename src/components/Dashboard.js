@@ -3,7 +3,7 @@ import Card from "./Card";
 
 function Dashboard() {
   return (
-    <div className="p-3 pt-3" style={{height:"100vh"}}>
+    <div className="p-3 pt-3 dashboard" style={{height:"100vh"}}>
       <div>
       <span className="float-left">
         <h2 className="font-weight-bold font-color">Dashboard</h2>

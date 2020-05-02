@@ -1,28 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import { Route, BrowserRouter, Redirect } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import { Route, BrowserRouter, Redirect } from "react-router-dom";
 
 const Home = () => {
   const doRedirect = () => {
     let log = true;
-    if (log){
-      return <Redirect to='/dashboard'></Redirect>
+    if (log) {
+      return <Redirect to="/dashboard"></Redirect>;
     }
-  }
-  return(
+  };
+  return (
     <BrowserRouter>
-    <Route path='/'><App/></Route>
-    {doRedirect}
-  </BrowserRouter>
-  )
-}
+      <Route path="/">
+        <App />
+      </Route>
+      {doRedirect}
+    </BrowserRouter>
+  );
+};
 ReactDOM.render(
   <React.StrictMode>
-   <Home/>
+    <Home />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

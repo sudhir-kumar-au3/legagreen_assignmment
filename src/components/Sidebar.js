@@ -5,13 +5,13 @@ import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
-    <div className="border-right p-3 pt-3" style={{ height: "100vh" }}>
+    <div className="border-right p-3 pt-3 sidebar" style={{ height: "100vh" }}>
       <img
         src="https://img.icons8.com/color/48/000000/men-age-group-4.png"
         alt="logo"
       />
       <div className="wrapper">
-        <div className="pt-5 pl-3 mt-4">
+        <div className="pt-5 pl-3 mt-md-4">
           <NavLink activeClassName='active' to="/dashboard">
             {" "}
             <MaterialIcon icon="dashboard"></MaterialIcon>
